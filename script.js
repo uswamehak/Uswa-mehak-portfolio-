@@ -9,7 +9,7 @@
    ===================================================================== */
 const PROFILE = {
   name: "Uswa Mehak",
-  role: "Software Engineer",
+  role: "Student",
   field: "Software Engineering"
 };
 
