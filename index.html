@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Professional Image Portfolio | Slide Deck</title>
+  <meta name="description" content="An interactive slide-deck portfolio: six professional looks, each tied to a skill, role or OCEAN trait." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- top HUD -->
+  <header class="hud" id="hud">
+    <button class="hud-brand" id="brand" type="button" aria-label="Back to the first slide"></button>
+    <p class="hud-title" id="hudTitle" aria-live="polite"></p>
+    <div class="hud-tools">
+      <span class="timer" id="timer" hidden title="Click to reset the timer">0:00</span>
+      <button class="tool" id="timerBtn" type="button" title="Presenter timer (T)" aria-label="Toggle presenter timer">&#9201;</button>
+      <button class="tool" id="menuBtn" type="button" title="All slides (G)" aria-label="Show all slides">&#9638;</button>
+      <button class="tool" id="fsBtn" type="button" title="Full screen (F)" aria-label="Toggle full screen">&#9974;</button>
+      <button class="tool tool-wide" id="pdfBtn" type="button" title="Save as PDF">PDF</button>
+    </div>
+  </header>
+
+  <!-- slides are built by script.js -->
+  <main class="deck" id="deck" aria-label="Portfolio slides"></main>
+
+  <!-- side arrows + bottom rail -->
+  <button class="arrow arrow-prev" id="prev" type="button" aria-label="Previous slide">&larr;</button>
+  <button class="arrow arrow-next" id="next" type="button" aria-label="Next slide">&rarr;</button>
+  <nav class="rail" id="rail" aria-label="Slide progress"></nav>
+
+  <!-- all-slides overlay -->
+  <aside class="menu" id="menu" hidden aria-label="All slides">
+    <div class="menu-card">
+      <div class="menu-head">
+        <h2>All slides</h2>
+        <button class="tool" id="menuClose" type="button" aria-label="Close">&times;</button>
+      </div>
+      <ol class="menu-list" id="menuList"></ol>
+      <p class="menu-keys">Keys: &larr; &rarr; move &middot; G all slides &middot; F full screen &middot; T timer &middot; Esc close</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
