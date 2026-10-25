@@ -252,11 +252,11 @@ LOOKS.forEach(l => {
 
 /* 9. OCEAN map */
 const OCEAN_MAP = [
-  { letter: "O", name: "Openness",          color: "#c43a73", looks: [[4, "Creative / Tech"], [5, "Remote Work"]] },
-  { letter: "C", name: "Conscientiousness", color: "#8a2552", looks: [[1, "Business Formal"], [2, "Skills in Action"], [5, "Remote Work"]] },
-  { letter: "E", name: "Extraversion",      color: "#e0608f", looks: [[3, "Networking"]] },
-  { letter: "A", name: "Agreeableness",     color: "#b23a69", looks: [[3, "Networking"]] },
-  { letter: "N", name: "Neuroticism",       color: "#4b1c3d", looks: [[3, "Field-Specific"]] }
+  { letter: "O", name: "Openness",          color: "#c43a73", looks: [[4, "Creative / Tech"]] },
+  { letter: "C", name: "Conscientiousness", color: "#8a2552", looks: [[1, "Business Formal"]] },
+  { letter: "E", name: "Extraversion",      color: "#e0608f", looks: [[6, "Presentation / Interview"]] },
+  { letter: "A", name: "Agreeableness",     color: "#b23a69", looks: [[2, "Skills in Action"]] },
+  { letter: "N", name: "Neuroticism",       color: "#4b1c3d", looks: [[5, "Remote Work"]] }
 ];
 SLIDES.push({
   label: "OCEAN map", tone: "cream", html: `
